@@ -7,9 +7,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <div className="credit">
-        Made by Jacer Chetoui
-      </div>
+
     </>
   );
 }
