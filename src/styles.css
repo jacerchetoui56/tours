@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* !=======  header ===== */
+.header {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > div {
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.header > div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  background-color: rgb(60, 136, 250);
+  height: 4px;
+  width: 70%;
+}
+
+/* !============= tours ============= */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour {
+  max-width: 500px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 12px -4px rgb(82, 82, 82);
+}
+
+.tour-image {
+  max-width: 500px;
+  width: 100%;
+  max-height: 300px;
+}
+.tour-title {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-name {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.tour-price {
+  padding: 0.1rem 0.5rem;
+  border-radius: 2px;
+  color: rgba(0, 128, 0, 0.671);
+  background-color: rgba(144, 238, 144, 0.288);
+}
+
+.tour-info {
+  color: rgb(61, 61, 61);
+  line-height: 1.2;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.readmore {
+  cursor: pointer;
+  border: none;
+  margin-left: 0.75rem;
+  background-color: transparent;
+  color: blue;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  text-align: center;
+  padding: 1rem;
+}
+
+.delete-btn button {
+  cursor: pointer;
+  border: solid 1px rgb(201, 3, 3);
+  background-color: white;
+  color: rgb(218, 6, 6);
+  letter-spacing: 1px;
+  padding: 0.25rem 1rem;
+}
+
+.credit {
+  text-align: center;
+  padding: 0.5rem;
+  color: rgb(83, 83, 83);
+  letter-spacing: 2px;
+}
