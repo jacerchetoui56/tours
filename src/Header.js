@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className='header'>
             <div>
-                Food Menu
+                Our Tours
             </div>
         </header>
     )
