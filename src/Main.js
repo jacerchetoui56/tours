@@ -6,7 +6,7 @@ export default function Main() {
     const [loading, setLoading] = useState(true)
 
     async function fetchData() {
-        const response = await fetch('https://course-api.com/react-tours-project')
+        const response = await fetch(process.env.REACT_APP_API_KEY)
         const data = await response.json()
         setTours(data)
     }
