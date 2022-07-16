@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Tour from './Tour'
 import Loading from './Loading'
+
 export default function Main() {
     const [tours, setTours] = useState([])
     const [loading, setLoading] = useState(true)

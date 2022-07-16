@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
 
-export default function Tour(props) {
+export default function Tour({ name, id, handleDelete, image, info, price }) {
     const [readMore, setReadMore] = useState(true)
 
     return (
         <div className='tour'>
-            <img className='tour-image' src={props.image} alt={props.name} />
+            <img className='tour-image' src={image} alt={name} />
             <div className='tour-title'>
                 <h4 className='tour-name'>
-                    {props.name}
+                    {name}
                 </h4>
                 <h4 className='tour-price'>
-                    ${props.price}
+                    ${price}
                 </h4>
             </div>
             <p className="tour-info">
                 {readMore ?
-                    props.info.substring(0, 200) + '...' :
-                    props.info
+                    info.substring(0, 200) + '...' :
+                    info
                 }
                 <button onClick={() => setReadMore(!readMore)} className=' readmore'>{readMore ? ' show more' : 'show less'}</button>
             </p>
             <div className='delete-btn'>
-                <button onClick={props.handleDelete} >Not interested</button>
+                <button onClick={handleDelete} >Not interested</button>
             </div>
         </div>
     )
